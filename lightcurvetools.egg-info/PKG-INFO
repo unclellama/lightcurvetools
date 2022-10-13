@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: lightcurvetools
+Version: 0.1
+Summary: a class for 3-column lightcurves, loading, smoothing etc
+Home-page: #
+Author: max
+Author-email: unclellama@gmail.com

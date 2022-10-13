@@ -1,0 +1,13 @@
+.DS_Store
+setup.py
+lightcurvetools/.DS_Store
+lightcurvetools/lightcurvetools.py
+lightcurvetools/tests.py
+lightcurvetools/testwrite.dat
+lightcurvetools.egg-info/PKG-INFO
+lightcurvetools.egg-info/SOURCES.txt
+lightcurvetools.egg-info/dependency_links.txt
+lightcurvetools.egg-info/not-zip-safe
+lightcurvetools.egg-info/requires.txt
+lightcurvetools.egg-info/top_level.txt
+lightcurvetools/testdata/lc_xrt_alldata.dat

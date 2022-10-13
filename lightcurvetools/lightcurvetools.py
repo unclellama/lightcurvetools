@@ -8,9 +8,6 @@
 # including a redshift parameter z which does nothing right now,
 # might want to include a 'luminosity' method later, or to get rest-frame days, etc.
 
-# v0.1 - by daniel (unclellama@gmail.com)
-# last updated 13th oct 2022
-
 import copy
 import numpy as np
 from matplotlib import pyplot as plt

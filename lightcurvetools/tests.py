@@ -1,5 +1,8 @@
 from lightcurvetools import *
 
+# should do a smooth-and-subtract operation on the test lightcurve, show a plot,
+# and save the smoothed lc
+
 testfile = 'testdata/lc_xrt_alldata.dat'
 testlc = readlightcurve(testfile)
 testlc.label = 'original'
