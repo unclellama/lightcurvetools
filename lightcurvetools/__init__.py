@@ -1,1 +1,1 @@
-import lightcurvetools.py
+import lightcurvetools
