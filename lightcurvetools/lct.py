@@ -43,7 +43,7 @@ class lightcurve:
         print('median time sampling: ', np.median(dt))
         print('min, max time sampling: ', np.min(dt), np.max(dt))
         
-def readlightcurve(file, twocol=False, tunit='days', tframe='observed', funit='cgs'):
+def read(file, twocol=False, tunit='days', tframe='observed', funit='cgs'):
     # reads the lightcurve from a three-col ascii file into a lightcurve object
     # if no error colum is present, set twocol=True to set errors=0 (edit manually afterwards)
     f = open(file, "r")
@@ -61,7 +61,7 @@ def readlightcurve(file, twocol=False, tunit='days', tframe='observed', funit='c
         tunit=tunit, tframe=tframe, funit=funit)
     return lc
     
-def smoothlightcurve(lc, width, resampling=0.1, type='boxcar', prop_errors=True):
+def smooth(lc, width, resampling=0.1, type='boxcar', prop_errors=True):
     # apply boxcar smoothing to lightcurve
     # reduces the errorbars to account for the averaging process if prop_errors=True
     ft = interpolate.interp1d(lc.tt, lc.ff,
@@ -79,14 +79,14 @@ def smoothlightcurve(lc, width, resampling=0.1, type='boxcar', prop_errors=True)
     lcnew.ff = fluxinter_smooth
     return lcnew
     
-def subtractlightcurve(lc, lcsub):
+def subtract(lc, lcsub):
     # subtract one lightcurve from the other, assuming *identical* time arrays!
     resflux = lc.ff - lcsub.ff
     lcres = copy.deepcopy(lc)
     lcres.ff = resflux
     return lcres
     
-def plotlightcurve(lcarr):
+def plot(lcarr):
     # plot an array of lightcurves
     for lc in lcarr:
         plt.errorbar(lc.tt, lc.ff, yerr=lc.ef, label=lc.label)

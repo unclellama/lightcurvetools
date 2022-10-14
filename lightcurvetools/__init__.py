@@ -1,1 +1,1 @@
-import lightcurvetools
+from lightcurvetools.lct import read, smooth, subtract, plot
