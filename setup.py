@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(name='lightcurvetools',
-        version='0.1',
+        version='1.0',
         description='a class for 3-column lightcurves, loading, smoothing etc',
         url='#',
         author='max',
